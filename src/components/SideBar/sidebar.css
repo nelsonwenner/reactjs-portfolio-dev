@@ -3,7 +3,56 @@
   min-height: 100vh;
   background-color: #fdf9ff;
   position: sticky;
-  top: 0px;
+  top: 0;
+  left: 0;
   z-index: 10;
   border-right: 1px solid #e8dfec;
+  padding: 3rem;
+}
+
+.logo {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.logo a {
+  font-size: 4rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  line-height: 5rem;
+}
+
+.logo a::before {
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ec1839;
+  border-left: 4px solid #ec1839;
+}
+
+.logo a::after {
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 4px solid #ec1839;
+  border-bottom: 4px solid #ec1839;
+}
+.nav {
+  background-color: #ededed;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.copyright-text {
+  background-color: #ededed;
 }

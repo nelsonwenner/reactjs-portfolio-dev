@@ -1,5 +1,7 @@
 /*Import the fonts used*/
-@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
 
 /*Basic reset*/
 * {
@@ -14,7 +16,8 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   background-color: #f2f2fc;
   color: #2d2c2c;;
