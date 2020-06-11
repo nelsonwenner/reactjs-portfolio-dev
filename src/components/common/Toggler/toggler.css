@@ -1,0 +1,28 @@
+.toggler span {
+  height: 0.2rem;
+  width: 1.6rem;
+  display: inline-block;
+  position: relative;
+  background-color: #ec1839;
+}
+
+.toggler span::before {
+  content: '';
+  height: 0.2rem;
+  width: 1.6rem;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  background-color: #ec1839;
+}
+
+.toggler span::after {
+  content: '';
+  height: 0.2rem;
+  width: 1.6rem;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background-color: #ec1839;
+}
+

@@ -58,3 +58,21 @@
   color: #7d7d7d;
   text-align: center;
 }
+
+.toggler {
+  height: 4rem;
+  width: 4.5rem;
+  border: 1px solid #d4d4e3;
+  cursor: pointer;
+  position: fixed;
+  top: 3rem;
+  left: 34.05rem;
+  z-index: 11;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
