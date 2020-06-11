@@ -15,6 +15,7 @@
   line-height: 4.5rem;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+  text-transform: capitalize;
 }
 
 .nav li a:not(.active):hover {
