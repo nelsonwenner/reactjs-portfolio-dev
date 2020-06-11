@@ -1,0 +1,32 @@
+.nav {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.nav li {
+  display: block;
+  border-bottom: 1px solid #e8dfec;
+}
+
+.nav li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #302e4d;
+  line-height: 4.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.nav li a:not(.active):hover {
+  padding-left: 0.5rem;
+  color: #ec1839;
+}
+
+.nav li a.active {
+  color: #ec1839;
+}
+
+.nav li a .fa {
+  margin-right: 0.5rem;
+}
