@@ -7,7 +7,7 @@ import About from '../About/About';
 const Main = () => {
   return (
     <>
-      <div className="main hide">
+      <div className="main">
         <div className="container-main">
           <div className="intro">
             <img src={ Profile } alt="profile" className="shadow-dark" />

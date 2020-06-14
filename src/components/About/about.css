@@ -2,7 +2,6 @@
   margin-left: 3rem;
   margin-right: 3rem;
   padding-top: 6rem;
-  padding-bottom: 7rem;
 }
 
 .about-title {
@@ -69,9 +68,16 @@
   margin-right: 35rem;
 }
 
-.personal-info {
-  width: 100%;
+.margin-top-40 {
   margin-top: 4rem;
+}
+
+.margin-top-30 {
+  margin-top: 3rem;
+}
+
+.margin-top-25 {
+  margin-top: 2.5rem;
 }
 
 .skills-info {
@@ -131,7 +137,6 @@
   font-size: 1.6rem;
   color: #302e4d;
   text-transform: capitalize;
-
 }
 
 .skills-item .item-skill .progress {
@@ -160,6 +165,95 @@
   color: #302e4d;
 }
 
+.education {
+  width: 100%;
+}
+
+.education .title {
+  color: #302e4d;
+}
+
+.experience {
+  width: 100%;
+}
+
+.experience .title {
+  color: #302e4d;
+}
+
+.timeline-box {
+  margin-top: 3rem;
+}
+
+.time-line {
+  background-color: #fdf9ff;
+  padding: 3rem 1.5rem;
+  border: 1px solid #d4d4e3;
+  border-radius: 10px;
+  margin-right: 4rem;
+}
+
+.experience .row .timeline-box .time-line {
+  margin-right: 0;
+}
+
+.time-line .timeline-item {
+  position: relative;
+  padding-left: 3.7rem;
+  padding-bottom: 5rem;
+}
+
+.time-line .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.time-line .timeline-item::before {
+  content: '';
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #ec1839;
+}
+
+.time-line .timeline-item .timeline-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  color: #302e4d;
+}
+
+.time-line .timeline-item .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #ec1839;
+}
+
+.time-line .timeline-item .timeline-date {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  color: #504e70;
+}
+
+.time-line .timeline-item .timeline-date .fa { 
+  margin-right: 0.5rem;
+}
+
+.time-line .timeline-item .timeline-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #504e70;
+  margin: 0;
+}
+
 /*Media query*/
 @media only screen and (max-width:1635px) { 
   
@@ -174,6 +268,18 @@
   .info-item {
     flex-wrap: wrap;
     margin-right: 5rem;
+  }
+
+}
+
+@media only screen and (max-width:1201px) { 
+  
+  .time-line {
+    margin-right: 0;
+  }
+
+  .experience {
+    margin-top: 2.5rem;
   }
 
 }
