@@ -1,6 +1,8 @@
 import React from 'react';
 import './about.css';
 
+import Timeline from './Timeline/Timeline';
+
 const About = () => {
   return (
     <div className="container-about">
@@ -83,42 +85,18 @@ const About = () => {
               <div className="row">
                 <div className="timeline-box">
                   <div className="time-line shadow-dark">
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h6 className="timeline-date">
-                        <i className="fa fa-calendar"></i>
-                        2013 - 2015
-                      </h6>
-                      <h4 className="timeline-title">Master In Computer Science</h4>
-                      <p className="timeline-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                    </div>
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h6 className="timeline-date">
-                        <i className="fa fa-calendar"></i>
-                        2011 - 2013
-                      </h6>
-                      <h4 className="timeline-title">Studied At IFPI</h4>
-                      <p className="timeline-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                    </div>
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h6 className="timeline-date">
-                        <i className="fa fa-calendar"></i>
-                        2008 - 2011
-                      </h6>
-                      <h4 className="timeline-title">Technologist</h4>
-                      <p className="timeline-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                    </div>
+                    <Timeline 
+                      calendar={ '2013 - 2015' }
+                      title={ 'Master In Computer Science' }
+                    />
+                    <Timeline 
+                      calendar={ '2011 - 2013' }
+                      title={ 'Studied At IFPI' }
+                    />
+                    <Timeline 
+                      calendar={ '2008 - 2011' }
+                      title={ 'Technologist' }
+                    />
                   </div>
                 </div>
               </div>
@@ -130,42 +108,18 @@ const About = () => {
               <div className="row">
                 <div className="timeline-box">
                   <div className="time-line shadow-dark">
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h6 className="timeline-date">
-                        <i className="fa fa-calendar"></i>
-                        2013 - 2015
-                      </h6>
-                      <h4 className="timeline-title">Backend Developer</h4>
-                      <p className="timeline-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                    </div>
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h6 className="timeline-date">
-                        <i className="fa fa-calendar"></i>
-                        2011 - 2013
-                      </h6>
-                      <h4 className="timeline-title">Fontend Developer</h4>
-                      <p className="timeline-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                    </div>
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h6 className="timeline-date">
-                        <i className="fa fa-calendar"></i>
-                        2008 - 2011
-                      </h6>
-                      <h4 className="timeline-title">Graphic Designer</h4>
-                      <p className="timeline-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      </p>
-                    </div>
+                    <Timeline 
+                      calendar={ '2013 - 2015' }
+                      title={ 'Backend Developer' }
+                    />
+                    <Timeline 
+                      calendar={ '2011 - 2013' }
+                      title={ 'Fontend Developer' }
+                    />
+                    <Timeline 
+                      calendar={ '2008 - 2011' }
+                      title={ 'Graphic Designer' }
+                    />
                   </div>
                 </div>
               </div>
