@@ -7,3 +7,15 @@
 .shadow-dark {
   box-shadow: 0 0 2rem rgba(48, 46, 77, 0.15);
 }
+
+.margin-top-40 {
+  margin-top: 4rem;
+}
+
+.margin-top-30 {
+  margin-top: 3rem;
+}
+
+.margin-top-25 {
+  margin-top: 2.5rem;
+}

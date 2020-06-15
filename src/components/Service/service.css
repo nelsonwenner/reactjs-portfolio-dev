@@ -1,0 +1,95 @@
+.service-title {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.service-title h2 {
+  font-size: 4rem;
+  color: #302e4d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.service-title span::before {
+  content: '';
+  height: 0.4rem;
+  width: 5rem;
+  position: absolute;
+  background-color: #ec1839;
+}
+
+.service-title span::after {
+  content: '';
+  height: 0.4rem;
+  width: 2.5rem;
+  position: absolute;
+  margin-top: 0.8rem;
+  background-color: #ec1839;
+}
+
+.row .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.row .grid .service-item {
+  background-color: #fdf9ff;
+  border: 1px solid #d4d4e3;
+  border-radius: 10px;
+  padding: 10rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.row .grid .service-item:hover {
+  box-shadow: 0 0 2rem rgba(48, 46, 77, 0.15);
+}
+
+.row .grid .service-item .icon {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #ec1839;
+  transition: all 0.3s ease;
+}
+
+.row .grid .service-item .icon .fa {
+  font-size: 4.5rem;
+  line-height: 6rem;
+  transition: all 0.3s ease;
+}
+
+.row .grid .service-item:hover .icon {
+  background-color: #ec1839;
+}
+
+.row .grid .service-item:hover .icon .fa {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.row .grid .service-item h4 { 
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  color: #302e4d;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.row .grid .service-item p { 
+  font-size: 1.6rem;
+  color: #504e70;
+  line-height: 2.5rem;
+}
