@@ -27,7 +27,7 @@ const Portfolio = () => {
       </div>
       <div className="row">
         <div className="grid-portfolio">
-          <div className="portfolio-item" data-category="wordpress">
+          <div className="portfolio-item shadow-dark" data-category="wordpress">
             <div className="portfolio-img">
               <img src={ portfolio01 } alt="portfolio" />
             </div>
@@ -38,7 +38,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="portfolio-item" data-category="photography">
+          <div className="portfolio-item shadow-dark" data-category="photography">
             <div className="portfolio-img">
               <img src={ porfolio04 } alt="portfolio" />
             </div>
@@ -49,7 +49,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="portfolio-item" data-category="wordpress">
+          <div className="portfolio-item shadow-dark" data-category="wordpress">
             <div className="portfolio-img">
               <img src={ porfolio02 } alt="portfolio" />
             </div>
@@ -60,7 +60,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="portfolio-item" data-category="photography">
+          <div className="portfolio-item shadow-dark" data-category="photography">
             <div className="portfolio-img">
               <img src={ porfolio05 } alt="portfolio" />
             </div>
@@ -71,7 +71,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="portfolio-item" data-category="wordpress">
+          <div className="portfolio-item shadow-dark" data-category="wordpress">
             <div className="portfolio-img">
               <img src={ porfolio03 } alt="portfolio" />
             </div>
@@ -82,7 +82,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="portfolio-item" data-category="web-design">
+          <div className="portfolio-item shadow-dark" data-category="web-design">
             <div className="portfolio-img">
               <img src={ porfolio06 } alt="portfolio" />
             </div>
