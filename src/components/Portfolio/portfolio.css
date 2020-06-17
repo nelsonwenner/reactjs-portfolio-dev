@@ -166,6 +166,32 @@
   position: relative;
 }
 
+.lightbox.open .lightbox-content {
+  animation: lightboximage 0.5s ease;
+}
+
+@keyframes lightboximage {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+Effect image
+.lightbox.open .lightbox-content {
+  position: relative;
+  transition: all 0.5s ease;
+  transform: scale(0.8);
+}
+
+.lightbox.open .lightbox-content:hover {
+  transform: scale(1);
+}
+*/
+
 .lightbox .lightbox-content .light-close {
   position: absolute;
   height: 4rem;
