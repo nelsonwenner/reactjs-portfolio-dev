@@ -14,8 +14,27 @@ const Portfolio = () => {
     const filterContainer = document.querySelector(".portfolio-filter");
     filterContainer.querySelector(".active").classList.remove("active");
     event.target.classList.add("active");
+
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+    const totalPortfolioItem = portfolioItems.length;
+
+    const filterValue = event.target.getAttribute("data-filter");
+    for (let i=0; i < totalPortfolioItem; i++) {
+      if (filterValue === portfolioItems[i].getAttribute("data-category")) {
+        portfolioItems[i].classList.remove('hide');
+        portfolioItems[i].classList.add('show');
+      } else {
+        portfolioItems[i].classList.remove('show');
+        portfolioItems[i].classList.add('hide');
+      }
+
+      if (filterValue === "all") {
+        portfolioItems[i].classList.remove('hide');
+        portfolioItems[i].classList.add('show');
+      }
+    }
   }
-  
+
   return (
     <div className="portfolio">
       <div className="row">
@@ -84,6 +103,17 @@ const Portfolio = () => {
             </div>
             <div className="portfolio-info">
               <h4>Wordpress</h4>
+              <div className="portfolio-icon">
+                <i className="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div className="portfolio-item shadow-dark" data-category="web-design">
+            <div className="portfolio-img">
+              <img src={ porfolio06 } alt="portfolio" />
+            </div>
+            <div className="portfolio-info">
+              <h4>Web Desing</h4>
               <div className="portfolio-icon">
                 <i className="fa fa-search"></i>
               </div>
