@@ -95,6 +95,24 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <div className="lightbox">
+        <div className="lightbox-content">
+          <div className="light-close">&times;</div>
+           <img src={ portfolio01 } className="lightbox-img" />
+          <div className="lightbox-caption">
+            <div className="caption-text">Web Design</div>
+            <div className="caption-counter">1 of 6</div>
+          </div>
+        </div>
+        <div className="lightbox-controls">
+          <div className="prev-item">
+            <i className="fa fa-angle-left"></i>
+          </div>
+          <div className="next-item">
+            <i className="fa fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
