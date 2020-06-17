@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import './portfolio.css';
 
 import portfolio01 from '../../assets/image/01.png';
@@ -9,6 +9,13 @@ import porfolio05 from '../../assets/image/05.jpg';
 import porfolio06 from '../../assets/image/06.jpg';
 
 const Portfolio = () => {
+
+  const portfolioFilterClicked = (event) => {
+    const filterContainer = document.querySelector(".portfolio-filter");
+    filterContainer.querySelector(".active").classList.remove("active");
+    event.target.classList.add("active");
+  }
+  
   return (
     <div className="portfolio">
       <div className="row">
@@ -19,10 +26,10 @@ const Portfolio = () => {
       </div>
       <div className="row">
         <div className="portfolio-filter">
-          <button type="button" className="active" data-filter='all'>All</button>
-          <button type="button" data-filter='web-design'>Web Design</button>
-          <button type="button" data-filter='photography'>Photography</button>
-          <button type="button" data-filter='wordpress'>Wordpress</button>
+          <button onClick={ portfolioFilterClicked } type="button" className="active" data-filter='all'>All</button>
+          <button onClick={ portfolioFilterClicked } type="button" data-filter='web-design'>Web Design</button>
+          <button onClick={ portfolioFilterClicked } type="button" data-filter='photography'>Photography</button>
+          <button onClick={ portfolioFilterClicked } type="button" data-filter='wordpress'>Wordpress</button>
         </div>
       </div>
       <div className="row">
