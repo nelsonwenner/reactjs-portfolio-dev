@@ -1,0 +1,41 @@
+.blog-title {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.blog-title h2 {
+  font-size: 4rem;
+  color: #302e4d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.blog-title span::before {
+  content: '';
+  height: 0.4rem;
+  width: 5rem;
+  position: absolute;
+  background-color: #ec1839;
+}
+
+.blog-title span::after {
+  content: '';
+  height: 0.4rem;
+  width: 2.5rem;
+  position: absolute;
+  margin-top: 0.8rem;
+  background-color: #ec1839;
+}
+
+.row .grid-blog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.row .grid-blog .blog-item {
+ 
+}
