@@ -1,5 +1,8 @@
-import React,{ useEffect } from 'react';
+import React from 'react';
 import './portfolio.css';
+
+import PortfolioItem from './PortfolioItem/PortfolioItem';
+import ImageModal from './imageModal/ImageModal';
 
 import portfolio01 from '../../assets/image/01.png';
 import porfolio02 from '../../assets/image/02.png';
@@ -53,103 +56,44 @@ const Portfolio = () => {
       </div>
       <div className="row">
         <div className="grid-portfolio">
-          <div className="portfolio-item shadow-dark" data-category="wordpress">
-            <div className="portfolio-img">
-              <img src={ portfolio01 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Wordpress</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="photography">
-            <div className="portfolio-img">
-              <img src={ porfolio04 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Photography</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="wordpress">
-            <div className="portfolio-img">
-              <img src={ porfolio02 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Wordpress</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="photography">
-            <div className="portfolio-img">
-              <img src={ porfolio05 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Photography</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="wordpress">
-            <div className="portfolio-img">
-              <img src={ porfolio03 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Wordpress</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="web-design">
-            <div className="portfolio-img">
-              <img src={ porfolio06 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Web Desing</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="web-design">
-            <div className="portfolio-img">
-              <img src={ porfolio06 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Web Desing</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
+          <PortfolioItem 
+            title={ "Wordpress" }
+            imagePortfolio={ portfolio01 }
+            category={ "wordpress" }
+          />
+          <PortfolioItem 
+            title={ "Photography" }
+            imagePortfolio={ porfolio04 }
+            category={ "photography" }
+          />
+          <PortfolioItem 
+            title={ "Wordpress" }
+            imagePortfolio={ porfolio02 }
+            category={ "wordpress" }
+          />
+          <PortfolioItem 
+            title={ "Photography" }
+            imagePortfolio={ porfolio05 }
+            category={ "photography" }
+          />
+          <PortfolioItem 
+            title={ "Wordpress" }
+            imagePortfolio={ porfolio03 }
+            category={ "wordpress" }
+          />
+          <PortfolioItem 
+            title={ "Web Design" }
+            imagePortfolio={ porfolio06 }
+            category={ "web-design" }
+          />
+          <PortfolioItem 
+            title={ "Web Design" }
+            imagePortfolio={ porfolio06 }
+            category={ "web-design" }
+          />
         </div>
       </div>
-      <div className="lightbox">
-        <div className="lightbox-content">
-          <div className="light-close">&times;</div>
-           <img src={ portfolio01 } className="lightbox-img" />
-          <div className="lightbox-caption">
-            <div className="caption-text">Web Design</div>
-            <div className="caption-counter">1 of 6</div>
-          </div>
-        </div>
-        <div className="lightbox-controls">
-          <div className="prev-item">
-            <i className="fa fa-angle-left"></i>
-          </div>
-          <div className="next-item">
-            <i className="fa fa-angle-right"></i>
-          </div>
-        </div>
-      </div>
+      <ImageModal />
     </div>
   )
 }
