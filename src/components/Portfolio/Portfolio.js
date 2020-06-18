@@ -1,6 +1,9 @@
 import React from 'react';
 import './portfolio.css';
 
+import PortfolioItem from './PortfolioItem/PortfolioItem';
+import ImageModal from './imageModal/ImageModal';
+
 import portfolio01 from '../../assets/image/01.png';
 import porfolio02 from '../../assets/image/02.png';
 import porfolio03 from '../../assets/image/03.png';
@@ -9,6 +12,32 @@ import porfolio05 from '../../assets/image/05.jpg';
 import porfolio06 from '../../assets/image/06.jpg';
 
 const Portfolio = () => {
+
+  const portfolioFilterClicked = (event) => {
+    const filterContainer = document.querySelector(".portfolio-filter");
+    filterContainer.querySelector(".active").classList.remove("active");
+    event.target.classList.add("active");
+
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+    const totalPortfolioItem = portfolioItems.length;
+
+    const filterValue = event.target.getAttribute("data-filter");
+    for (let i=0; i < totalPortfolioItem; i++) {
+      if (filterValue === portfolioItems[i].getAttribute("data-category")) {
+        portfolioItems[i].classList.remove('hide');
+        portfolioItems[i].classList.add('show');
+      } else {
+        portfolioItems[i].classList.remove('show');
+        portfolioItems[i].classList.add('hide');
+      }
+
+      if (filterValue === "all") {
+        portfolioItems[i].classList.remove('hide');
+        portfolioItems[i].classList.add('show');
+      }
+    }
+  }
+
   return (
     <div className="portfolio">
       <div className="row">
@@ -19,82 +48,52 @@ const Portfolio = () => {
       </div>
       <div className="row">
         <div className="portfolio-filter">
-          <button type="button" className="active" data-filter='all'>All</button>
-          <button type="button" data-filter='web-design'>Web Design</button>
-          <button type="button" data-filter='photography'>Photography</button>
-          <button type="button" data-filter='wordpress'>Wordpress</button>
+          <button onClick={ portfolioFilterClicked } type="button" className="active" data-filter='all'>All</button>
+          <button onClick={ portfolioFilterClicked } type="button" data-filter='web-design'>Web Design</button>
+          <button onClick={ portfolioFilterClicked } type="button" data-filter='photography'>Photography</button>
+          <button onClick={ portfolioFilterClicked } type="button" data-filter='wordpress'>Wordpress</button>
         </div>
       </div>
       <div className="row">
         <div className="grid-portfolio">
-          <div className="portfolio-item shadow-dark" data-category="wordpress">
-            <div className="portfolio-img">
-              <img src={ portfolio01 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Wordpress</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="photography">
-            <div className="portfolio-img">
-              <img src={ porfolio04 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Photography</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="wordpress">
-            <div className="portfolio-img">
-              <img src={ porfolio02 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Wordpress</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="photography">
-            <div className="portfolio-img">
-              <img src={ porfolio05 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Photography</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="wordpress">
-            <div className="portfolio-img">
-              <img src={ porfolio03 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Wordpress</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
-          <div className="portfolio-item shadow-dark" data-category="web-design">
-            <div className="portfolio-img">
-              <img src={ porfolio06 } alt="portfolio" />
-            </div>
-            <div className="portfolio-info">
-              <h4>Web Desing</h4>
-              <div className="portfolio-icon">
-                <i className="fa fa-search"></i>
-              </div>
-            </div>
-          </div>
+          <PortfolioItem 
+            title={ "Wordpress" }
+            imagePortfolio={ portfolio01 }
+            category={ "wordpress" }
+          />
+          <PortfolioItem 
+            title={ "Photography" }
+            imagePortfolio={ porfolio04 }
+            category={ "photography" }
+          />
+          <PortfolioItem 
+            title={ "Wordpress" }
+            imagePortfolio={ porfolio02 }
+            category={ "wordpress" }
+          />
+          <PortfolioItem 
+            title={ "Photography" }
+            imagePortfolio={ porfolio05 }
+            category={ "photography" }
+          />
+          <PortfolioItem 
+            title={ "Wordpress" }
+            imagePortfolio={ porfolio03 }
+            category={ "wordpress" }
+          />
+          <PortfolioItem 
+            title={ "Web Design" }
+            imagePortfolio={ porfolio06 }
+            category={ "web-design" }
+          />
+          <PortfolioItem 
+            title={ "Web Design" }
+            imagePortfolio={ porfolio06 }
+            category={ "web-design" }
+          />
         </div>
       </div>
+      <ImageModal />
     </div>
   )
 }
