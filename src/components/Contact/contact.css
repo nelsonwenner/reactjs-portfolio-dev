@@ -1,0 +1,67 @@
+.contact-title {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.contact-title h2 {
+  font-size: 4rem;
+  color: #302e4d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.contact-title span::before {
+  content: '';
+  height: 0.4rem;
+  width: 5rem;
+  position: absolute;
+  background-color: #ec1839;
+}
+
+.contact-title span::after {
+  content: '';
+  height: 0.4rem;
+  width: 2.5rem;
+  position: absolute;
+  margin-top: 0.8rem;
+  background-color: #ec1839;
+}
+
+.row .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row .contact-container .contact-info {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+}
+
+.row .contact-container .contact-info .icon {
+  display: inline-block;
+}
+
+.row .contact-container .contact-info .contact-icon .fa { 
+  font-size: 4rem;
+  color: #ec1839;
+}
+
+.row .contact-container .contact-info h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #302e4d;
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.row .contact-container .contact-info p { 
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #504e70;
+  font-weight: 400;
+}
