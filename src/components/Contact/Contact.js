@@ -1,6 +1,8 @@
 import React from 'react';
 import './contact.css';
 
+import FormContact from './FormContact/FormContact';
+
 const Contact = () => {
   return (
     <div className="contact">
@@ -29,12 +31,13 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-icon">
               <i className="fa fa-envelope"></i>
-              <h4>Emal</h4>
+              <h4>Email</h4>
               <p>info@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
+      <FormContact />
     </div>
   )
 }
