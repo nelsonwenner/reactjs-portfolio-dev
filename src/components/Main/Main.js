@@ -1,6 +1,7 @@
 import React from 'react';
 import './main.css';
 
+import StyleSwitcher  from '../StyleSwitcher/StyleSwitcher';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Profile from '../Profile/Profile';
@@ -17,6 +18,7 @@ const Main = () => {
       <Portfolio />
       <Blog />
       <Contact />
+      <StyleSwitcher />
     </div>
   )
 }
