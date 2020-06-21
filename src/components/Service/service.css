@@ -29,10 +29,10 @@
 }
 
 .row .grid-service {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 2.5rem;
+  width: 100%;
   padding-bottom: 3.5rem;
 }
 
@@ -92,4 +92,21 @@
   font-size: 1.6rem;
   color: #504e70;
   line-height: 2.5rem;
+}
+
+/*Responsive*/
+
+@media (max-width: 425px) {
+
+  .row .grid-service {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
+@media (max-width: 375px) {
+
+  .row .grid-service {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
 }

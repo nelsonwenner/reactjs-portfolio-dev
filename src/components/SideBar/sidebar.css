@@ -74,3 +74,13 @@
   justify-content: center;
   align-items: center;
 }
+
+/*Responsive*/
+
+@media (max-width: 601px) {
+
+  .sidebar {
+    display: none;
+  }
+
+}

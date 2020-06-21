@@ -19,3 +19,14 @@
 .margin-top-25 {
   margin-top: 2.5rem;
 }
+
+/*Responsive*/
+
+@media (max-width: 320px) {
+
+  .container-main {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+}

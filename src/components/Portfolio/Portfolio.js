@@ -20,7 +20,7 @@ const Portfolio = () => {
 
     const portfolioItems = document.querySelectorAll(".portfolio-item");
     const totalPortfolioItem = portfolioItems.length;
-
+    
     const filterValue = event.target.getAttribute("data-filter");
     for (let i=0; i < totalPortfolioItem; i++) {
       if (filterValue === portfolioItems[i].getAttribute("data-category")) {

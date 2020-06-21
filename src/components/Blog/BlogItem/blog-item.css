@@ -1,0 +1,68 @@
+.blog-item .blog-img img {
+  width: 100%;
+  height: 34rem;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.blog-item:hover .blog-img img { 
+  transform: scale(1.1);
+}
+
+.blog-item .blog-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-item .blog-img .blog-date {
+  position: absolute;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  left: 1.4rem;
+  bottom: 1.5rem;
+  background-color: #ec1839;
+} 
+
+.blog-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #d4d4e3;
+}
+
+.blog-item .blog-info {
+  padding: 3rem 1.5rem;
+  background-color: #fdf9ff;
+}
+
+.blog-item .blog-info .title-blog {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #302e4d;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.blog-item .blog-info .blog-description {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #504e70;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.blog-item .blog-info .blog-tags {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: #504e70;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.blog-item .blog-info .blog-tags a {
+  font-weight: 600;
+  color: #ec1839;
+  margin-left: 1rem;
+}
