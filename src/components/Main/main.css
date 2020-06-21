@@ -1,4 +1,6 @@
 .container-main {
+  position: relative;
+  max-width: 100%;
   margin-left: 3rem;
   margin-right: 3rem;
   padding-top: 6rem;
@@ -18,4 +20,13 @@
 
 .margin-top-25 {
   margin-top: 2.5rem;
+}
+
+/*Responsive*/
+
+@media (max-width: 320px) {
+
+  .container-main {
+    width: 100%;
+  }
 }

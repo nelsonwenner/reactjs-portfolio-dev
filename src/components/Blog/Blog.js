@@ -9,7 +9,7 @@ import BlogItem from './BlogItem/BlogItem';
 
 const Blog = () => {
   return (
-    <div className="blog hide">
+    <div className="blog">
       <div className="row">
         <div className="blog-title">
           <h2>Blog</h2>

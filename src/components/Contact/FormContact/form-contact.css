@@ -40,3 +40,17 @@
 input, textarea, select {
   font-family: 'Montserrat', sans-serif;
 }
+
+/*Responsive*/
+
+@media (max-width: 575px) {
+
+  .contact-form .row .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .row .contact-form {
+    text-align: center;
+  }
+}

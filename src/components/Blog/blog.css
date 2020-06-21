@@ -35,3 +35,20 @@
   grid-gap: 2.5rem;
   padding-bottom: 3.5rem;
 }
+
+
+/*Responsive*/
+
+@media (max-width: 425px) {
+
+  .row .grid-blog {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
+@media (max-width: 375px) {
+
+  .row .grid-blog {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}

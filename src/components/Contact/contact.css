@@ -65,3 +65,14 @@
   color: #504e70;
   font-weight: 400;
 }
+
+/*Responsive*/
+
+@media (max-width: 575px) {
+
+  .row .contact-container .contact-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+}
