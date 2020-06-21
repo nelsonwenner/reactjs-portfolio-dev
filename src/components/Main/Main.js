@@ -11,7 +11,7 @@ import Blog from '../Blog/Blog';
 
 const Main = () => {
   return (
-    <div className="container-main">
+    <div className="container-main" id="home">
       <Profile />
       <About />
       <Service />

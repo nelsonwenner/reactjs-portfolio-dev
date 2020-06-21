@@ -21,7 +21,7 @@
 
 .nav li a:not(.active):hover {
   padding-left: 0.5rem;
-  color: var(--hover);
+  color: #ec1839;
 }
 
 .nav li a.active {
