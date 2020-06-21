@@ -1,6 +1,4 @@
 .container-main {
-  position: relative;
-  max-width: 100%;
   margin-left: 3rem;
   margin-right: 3rem;
   padding-top: 6rem;
@@ -28,5 +26,7 @@
 
   .container-main {
     width: 100%;
+    margin: 0;
+    padding: 1rem;
   }
 }
