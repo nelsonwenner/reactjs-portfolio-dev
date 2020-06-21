@@ -5,7 +5,7 @@
 
 .service-title h2 {
   font-size: 4rem;
-  color: #302e4d;
+  color: var(--text);;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin: 0;
@@ -37,8 +37,8 @@
 }
 
 .row .grid-service .service-item {
-  background-color: #fdf9ff;
-  border: 1px solid #d4d4e3;
+  background-color: var(--card);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 10rem 1.5rem;
   display: flex;
@@ -83,14 +83,14 @@
 .row .grid-service .service-item h4 { 
   font-size: 2.3rem;
   margin-bottom: 1.5rem;
-  color: #302e4d;
+  color: var(--text);
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .row .grid-service .service-item p { 
   font-size: 1.6rem;
-  color: #504e70;
+  color: var(--text);
   line-height: 2.5rem;
 }
 

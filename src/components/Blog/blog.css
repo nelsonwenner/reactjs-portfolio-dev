@@ -5,7 +5,7 @@
 
 .blog-title h2 {
   font-size: 4rem;
-  color: #302e4d;
+  color: var(--text);
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin: 0;

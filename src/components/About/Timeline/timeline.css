@@ -2,6 +2,7 @@
   position: relative;
   padding-left: 3.7rem;
   padding-bottom: 5rem;
+  background-color: var(--card);
 }
 
 .timeline-item:last-child {
@@ -23,7 +24,7 @@
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-transform: capitalize;
-  color: #302e4d;
+  color: var(--text);
 }
 
 .timeline-item .circle-dot {
@@ -41,7 +42,7 @@
   font-size: 1.4rem;
   font-weight: 400;
   margin-bottom: 1.2rem;
-  color: #504e70;
+  color: var(--text);
 }
 
 .timeline-item .timeline-date .fa { 
@@ -51,6 +52,6 @@
 .timeline-item .timeline-text {
   font-size: 1.6rem;
   line-height: 2.5rem;
-  color: #504e70;
+  color: var(--text);
   margin: 0;
 }

@@ -5,7 +5,7 @@
 
 .about-title h2 {
   font-size: 4rem;
-  color: #302e4d;
+  color: var(--text);
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin: 0;
@@ -41,7 +41,7 @@
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
-  color: #302e4d;
+  color: var(--text);
 }
 
 .about-content .about-text span {
@@ -51,7 +51,7 @@
 .about-content .about-text p {
   font-size: 1.6rem;
   line-height: 2.5rem;
-  color: #504e70;
+  color: var(--text);
   margin: 0;
 }
 
@@ -72,14 +72,14 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1.6rem;
-  color: #302e4d;
+  color: var(--text);
   margin: 0;
   border-bottom: 1px solid #e8dfec;
 }
 
 .info-item div p span {
   font-weight: 400;
-  color: #504e70;
+  color: var(--text);
   margin-left: 0.4rem;
   display: inline-block;
 }
@@ -117,7 +117,7 @@
   line-height: 3rem;
   font-weight: 600;
   font-size: 1.6rem;
-  color: #302e4d;
+  color: var(--text);
   text-transform: capitalize;
 }
 
@@ -144,7 +144,7 @@
   right: 0;
   top: -40px;
   font-weight: 400;
-  color: #302e4d;
+  color: var(--text);
 }
 
 .education {
@@ -152,7 +152,7 @@
 }
 
 .education .title {
-  color: #302e4d;
+  color: var(--text);
 }
 
 .experience {
@@ -160,7 +160,7 @@
 }
 
 .experience .title {
-  color: #302e4d;
+  color: var(--text);
 }
 
 .timeline-box {
@@ -168,9 +168,9 @@
 }
 
 .time-line {
-  background-color: #fdf9ff;
+  background-color: var(--card);
   padding: 3rem 1.5rem;
-  border: 1px solid #d4d4e3;
+  border: 1px solid var(--border);
   border-radius: 10px;
   margin-right: 4rem;
 }

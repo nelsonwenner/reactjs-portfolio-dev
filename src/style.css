@@ -19,7 +19,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  background-color: #f2f2fc;
+  background-color: var(--bg);
   color: #2d2c2c;
 }
 
@@ -38,30 +38,38 @@ li {
 
 /*Themes*/
 :root {
-  --theme-light-background-dark-bg: #f2f2fc;
-  --theme-light-background-light-bg: #fdf9ff;
-  --theme-light-text-bg: #504e70;
-  --theme-light-border-dark-bg: #d4d4e3;
-  --theme-light-border-light-bg: #e8dfec;
+  --theme-light-bg-dark: #f2f2fc;
+  --theme-light-bg-light: #fdf9ff;
+  --theme-light-header: #ffffff;
+  --theme-light-text: #504e70;
+  --theme-light-border-dark: #d4d4e3;
+  --theme-light-border-light: #e8dfec;
+  --theme-light-hover: #ec1839;
+  --theme-light-card: #fdf9ff;
+
+  --theme-dark-bg-dark: #151515;
+  --theme-dark-bg-light: #222222;
+  --theme-dark-header: #302e4d;
+  --theme-dark-text: #e9e9e9;
+  --theme-dark-border: #393939;
+  --theme-dark-hover: #e9e9e9;
+  --theme-dark-card: #222222;
 }
 
 .dark {
-  --bg: var(--theme-colors1-bg);
-  --bg-nav: var(--theme-colors1-nav);
-  --text: var(--theme-colors1-text);
-  --border-color: var(--theme-colors1-borders);
-  --bg-table-header: var(--theme-colors1-table-header);
-  --bg-card: var(--theme-colors1-card);
-  --bg-icons: var(--theme-colors1-icon);
-  --bg-effect: var(--theme-colors1-effect);
+  --bg: var(--theme-dark-bg-dark);
+  --text: var(--theme-dark-text);
+  --header: var(--theme-dark-bg-light);
+  --border: var(--theme-dark-border);
+  --hover: var(--theme-dark-hover);
+  --card: var(--theme-dark-card);
 }
 
 .light {
-  --bg-background: var(--theme-colors0-bg);
-  --bg-nav: var(--theme-colors0-nav);
-  --text: var(--theme-colors0-text);
-  --border-color: var(--theme-colors0-borders);
-  --bg-card: var(--theme-colors0-card);
-  --bg-icons: var(--theme-colors0-icon);
-  --bg-effect: var(--theme-colors0-effect);
+  --bg: var(--theme-light-bg-dark);
+  --text: var(--theme-light-text);
+  --header: var(--theme-light-bg-light);
+  --border: var(--theme-light-border-light);
+  --hover: var(--theme-light-hover);
+  --card: var(--theme-light-card);
 }

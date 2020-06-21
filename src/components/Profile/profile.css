@@ -2,7 +2,7 @@
   min-height: 100vh;
   padding-left: 3rem;
   padding-right: 3rem;
-  background-color: #f2f2fc;
+  background-color: var(--bg);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,7 +34,7 @@
 
 .container-profile .intro h1 {
   font-size: 3rem;
-  color: #302e4d;
+  color: var(--text);
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin: 2rem 0 0.8rem;
@@ -45,7 +45,7 @@
   font-weight: 500;
   margin: 0;
   line-height: 2.2rem;
-  color: #504e70;
+  color: var(--text);
 }
 
 .social-links {

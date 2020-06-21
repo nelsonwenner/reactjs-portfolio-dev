@@ -1,6 +1,7 @@
 .nav {
   margin-top: 8rem;
   margin-bottom: 8rem;
+  background-color: var(--header);
 }
 
 .nav li {
@@ -11,7 +12,7 @@
 .nav li a {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #302e4d;
+  color: var(--text);
   line-height: 4.5rem;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -20,7 +21,7 @@
 
 .nav li a:not(.active):hover {
   padding-left: 0.5rem;
-  color: #ec1839;
+  color: var(--hover);
 }
 
 .nav li a.active {
