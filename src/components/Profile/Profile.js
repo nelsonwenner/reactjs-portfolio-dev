@@ -5,7 +5,7 @@ import ProfileImg from '../../assets/image/nelsonwenner.jpeg';
 
 const Profile = () => {
   return (
-    <div className="profile">
+    <div className="profile section" id="home">
       <div className="container-profile">
         <div className="intro">
           <img src={ ProfileImg } alt="profile" className="shadow-dark" />

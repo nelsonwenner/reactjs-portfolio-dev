@@ -1,7 +1,8 @@
-.container-main {
+.section {
+  min-height: 100vh;
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-top: 6rem;
+  padding-top: 6.5rem;
 }
 
 .shadow-dark {

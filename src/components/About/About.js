@@ -5,7 +5,7 @@ import Timeline from './Timeline/Timeline';
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about section hide" id="about">
       <div className="row">
         <div className="about-title">
           <h2>About Me</h2>
