@@ -34,7 +34,7 @@
 ## :information_source: Getting Started
 
 1. Fork this repository and clone it on your machine.
-2. Change the directory to `react-hotel-web` where you cloned it.
+2. Change the directory to `reactjs-portfolio-dev` where you cloned it.
 3. Create `.env` of the system
    
 ```bash
@@ -53,7 +53,7 @@ $ npm install
 $ npm start
 ```
 
-6. Open react-hotel-web, the host [localhost:8000](http://localhost:8000) 
+6. Open reactjs-portfolio-dev, the host [localhost:8000](http://localhost:8000) 
 
 ## :memo: License
 This project is under the MIT license. See the [LICENSE](LICENSE.md) for more information.
