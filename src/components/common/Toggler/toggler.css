@@ -16,6 +16,17 @@
 
 .toggler.open {
   margin-left: 27rem;
+  animation: slideToggler 0.3s ease;
+}
+
+@keyframes slideToggler {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .toggler span {

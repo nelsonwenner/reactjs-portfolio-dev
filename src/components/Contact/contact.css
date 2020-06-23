@@ -74,7 +74,6 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
 }
 
 @media (max-width: 320px) {
@@ -82,5 +81,4 @@
   .contact-title {
     margin-top: 8rem;
   }
-
 }

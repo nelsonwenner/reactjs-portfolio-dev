@@ -185,7 +185,6 @@
   .info-item {
     margin-right: 20rem;
   }
-
 }
 
 @media only screen and (max-width:1328px) { 
@@ -194,7 +193,6 @@
     flex-wrap: wrap;
     margin-right: 5rem;
   }
-
 }
 
 @media only screen and (max-width:1201px) { 
@@ -206,7 +204,6 @@
   .experience {
     margin-top: 2.5rem;
   }
-
 }
 
 @media (max-width: 320px) {
@@ -214,5 +211,4 @@
   .about-title {
     margin-top: 8rem;
   }
-
 }
