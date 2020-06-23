@@ -1,7 +1,7 @@
 import React from 'react';
 import './style-switcher.css';
 
-import usePersistedState from '../../hooks/usePersistedState';
+import usePersistedState from '../../../hooks/usePersistedState';
 
 const StyleSwitcher = () => {
   const [theme, setTheme] = usePersistedState('theme', 'dark');
