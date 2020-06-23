@@ -29,6 +29,20 @@
   }
 }
 
+.toggler.open span {
+  background-color: transparent;
+}
+
+.toggler.open span::before {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.toggler.open span::after {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
 .toggler span {
   height: 0.2rem;
   width: 1.8rem;
