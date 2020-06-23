@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/nelsonwenner/react-hotel-web?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/nelsonwenner/reactjs-portfolio-dev?color=%2304D361">
 
   <a href="https://github.com/nelsondiaas">
     <img alt="Made by @nelsonwenner" src="https://img.shields.io/badge/made%20by-%40nelsonwenner-%2304D361">
@@ -11,8 +11,8 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/nelsondiaas/react-hotel-web/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/nelsonwenner/react-hotel-web?style=social">
+  <a href="https://github.com/nelsondiaas/reactjs-portfolio-dev/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/nelsonwenner/reactjs-portfolio-dev?style=social">
   </a>
 </p>
 
