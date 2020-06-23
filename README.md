@@ -23,7 +23,7 @@
 </p>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/40550247/83934170-0c798180-a785-11ea-8332-99d38732a996.png" />
+  <img src="https://user-images.githubusercontent.com/40550247/85410889-08e44980-b53e-11ea-8f85-6bf63ec16444.png" />
 </div>
 
 ## :rocket: Technologies
