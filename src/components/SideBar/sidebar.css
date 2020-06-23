@@ -83,7 +83,6 @@
   .sidebar {
     display: none;
   }
-  
 }
 
 @media (max-width: 375px) {
@@ -91,6 +90,5 @@
   .sidebar.open {
     width: 20rem;
   }
-  
 }
 
