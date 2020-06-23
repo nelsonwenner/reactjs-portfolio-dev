@@ -5,7 +5,7 @@
 
 .portfolio-title h2 {
   font-size: 4rem;
-  color: #302e4d;
+  color: var(--text);
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin: 0;
@@ -42,7 +42,7 @@
   text-transform: capitalize;
   margin-left: 1rem;
   margin-right: 1rem;
-  color: #302e4d;
+  color: var(--text);
   cursor: pointer;
   border-bottom: 2px solid transparent;
   white-space: nowrap;
@@ -79,6 +79,12 @@
   }
 }
 
+@media (max-width: 320px) {
+
+  .portfolio-title {
+    margin-top: 8rem;
+  }
+}
 
 /*
         Effect image

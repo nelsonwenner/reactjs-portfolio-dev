@@ -29,18 +29,18 @@
 .blog-item {
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #d4d4e3;
+  border: 1px solid var(--border);
 }
 
 .blog-item .blog-info {
   padding: 3rem 1.5rem;
-  background-color: #fdf9ff;
+  background-color: var(--card);
 }
 
 .blog-item .blog-info .title-blog {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #302e4d;
+  color: var(--text);
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
@@ -48,7 +48,7 @@
 .blog-item .blog-info .blog-description {
   font-size: 1.6rem;
   line-height: 2.5rem;
-  color: #504e70;
+  color: var(--text);
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
@@ -56,13 +56,13 @@
 .blog-item .blog-info .blog-tags {
   font-size: 1.4rem;
   line-height: 2.5rem;
-  color: #504e70;
+  color: var(--text);
   font-weight: 400;
   text-transform: capitalize;
 }
 
 .blog-item .blog-info .blog-tags a {
   font-weight: 600;
-  color: #ec1839;
+  color: var(--hover);
   margin-left: 1rem;
 }

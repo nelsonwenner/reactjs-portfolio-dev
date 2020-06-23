@@ -5,7 +5,7 @@ import FormContact from './FormContact/FormContact';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact section hide" id="contact">
       <div className="row">
         <div className="contact-title">
           <h2>Contact</h2>

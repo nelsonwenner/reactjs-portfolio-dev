@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <FullContainer>
       <Row>
-        <Column xlarge={2} large={3} medium={4} small={12}>
+        <Column xlarge={2} large={3} medium={0} small={0}>
           <SideBar />
         </Column>
-        <Column xlarge={10} large={9} medium={8} small={12}>
+        <Column xlarge={10} large={9} medium={12} small={12}>
           <Main />
         </Column>
       </Row>

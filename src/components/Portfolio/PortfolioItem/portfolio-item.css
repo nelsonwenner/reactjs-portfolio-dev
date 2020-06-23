@@ -1,5 +1,5 @@
 .portfolio-item {
-  border: 7px solid #fdf9ff;
+  border: 7px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;

@@ -19,8 +19,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  background-color: #f2f2fc;
-  color: #2d2c2c;;
+  background-color: var(--bg);
+  color: #2d2c2c;
 }
 
 a {
@@ -34,4 +34,42 @@ ul {
 
 li {
   list-style: none;
+}
+
+/*Themes*/
+:root {
+  --theme-light-bg-dark: #f2f2fc;
+  --theme-light-bg-light: #fdf9ff;
+  --theme-light-header: #ffffff;
+  --theme-light-text: #504e70;
+  --theme-light-border-dark: #d4d4e3;
+  --theme-light-border-light: #e8dfec;
+  --theme-light-hover: #ec1839;
+  --theme-light-card: #fdf9ff;
+
+  --theme-dark-bg-dark: #151515;
+  --theme-dark-bg-light: #222222;
+  --theme-dark-header: #302e4d;
+  --theme-dark-text: #e9e9e9;
+  --theme-dark-border: #393939;
+  --theme-dark-hover: #e9e9e9;
+  --theme-dark-card: #222222;
+}
+
+.dark {
+  --bg: var(--theme-dark-bg-dark);
+  --text: var(--theme-dark-text);
+  --header: var(--theme-dark-bg-light);
+  --border: var(--theme-dark-border);
+  --hover: var(--theme-dark-hover);
+  --card: var(--theme-dark-card);
+}
+
+.light {
+  --bg: var(--theme-light-bg-dark);
+  --text: var(--theme-light-text);
+  --header: var(--theme-light-bg-light);
+  --border: var(--theme-light-border-light);
+  --hover: var(--theme-light-hover);
+  --card: var(--theme-light-card);
 }
