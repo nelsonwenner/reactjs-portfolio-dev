@@ -2,6 +2,7 @@ import React from 'react';
 import './main.css';
 
 import StyleSwitcher  from '../StyleSwitcher/StyleSwitcher';
+import Toggler from '../common/Toggler/Toggler';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Profile from '../Profile/Profile';
@@ -11,7 +12,8 @@ import Blog from '../Blog/Blog';
 
 const Main = () => {
   return (
-    <div className="container-main">
+    <>
+      <Toggler />
       <Profile />
       <About />
       <Service />
@@ -19,7 +21,7 @@ const Main = () => {
       <Blog />
       <Contact />
       <StyleSwitcher />
-    </div>
+    </>
   )
 }
 

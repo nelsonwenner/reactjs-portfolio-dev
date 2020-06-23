@@ -208,3 +208,11 @@
   }
 
 }
+
+@media (max-width: 320px) {
+
+  .about-title {
+    margin-top: 8rem;
+  }
+
+}

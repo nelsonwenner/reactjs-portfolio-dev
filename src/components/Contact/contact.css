@@ -76,3 +76,11 @@
   }
   
 }
+
+@media (max-width: 320px) {
+
+  .contact-title {
+    margin-top: 8rem;
+  }
+
+}

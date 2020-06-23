@@ -108,5 +108,12 @@
   .row .grid-service {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
+}
+
+@media (max-width: 320px) {
+
+  .service-title {
+    margin-top: 8rem;
+  }
 
 }

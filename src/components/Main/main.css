@@ -5,6 +5,27 @@
   padding-top: 6.5rem;
 }
 
+.actived {
+  animation: slideSelect 1s ease;
+}
+
+@keyframes slideSelect {
+  from {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateX(150%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .shadow-dark {
   box-shadow: 0 0 2rem rgba(48, 46, 77, 0.15);
 }
@@ -25,7 +46,7 @@
 
 @media (max-width: 320px) {
 
-  .container-main {
+  .section {
     width: 100%;
     margin: 0;
     padding: 1rem;

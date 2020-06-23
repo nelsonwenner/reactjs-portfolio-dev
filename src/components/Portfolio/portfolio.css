@@ -79,6 +79,13 @@
   }
 }
 
+@media (max-width: 320px) {
+
+  .portfolio-title {
+    margin-top: 8rem;
+  }
+
+}
 
 /*
         Effect image

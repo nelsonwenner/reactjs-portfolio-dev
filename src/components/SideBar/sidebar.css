@@ -12,6 +12,11 @@
   padding: 3rem;
 }
 
+.sidebar.open {
+  width: 25rem;
+  display: block;
+}
+
 .logo {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -60,28 +65,21 @@
   text-align: center;
 }
 
-.toggler {
-  height: 4rem;
-  width: 4.5rem;
-  border: 1px solid #d4d4e3;
-  cursor: pointer;
-  position: fixed;
-  top: 3rem;
-  left: 34.05rem;
-  z-index: 11;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 /*Responsive*/
 
-@media (max-width: 601px) {
+@media (max-width: 990px) {
 
   .sidebar {
     display: none;
   }
-
+  
 }
+
+@media (max-width: 375px) {
+
+  .sidebar.open {
+    width: 20rem;
+  }
+  
+}
+

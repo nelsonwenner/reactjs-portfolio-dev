@@ -13,8 +13,10 @@ const NavBar = () => {
 
   const showSection = (sections, elements) => {
     sections.forEach(section => section.classList.add("hide"));
+    sections.forEach(section => section.classList.remove("actived"));
     const target = elements.getAttribute("href").split("#")[1];
     document.querySelector(`#${target}`).classList.remove("hide");
+    document.querySelector(`#${target}`).classList.add("actived");
   }
 
   return (
