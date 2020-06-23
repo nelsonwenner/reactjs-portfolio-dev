@@ -47,7 +47,7 @@ $ cp .env.example .env
 $ npm install
 ```
 
-5. Run project react-hotel-web
+5. Run project reactjs-portfolio-dev
    
 ```bash
 $ npm start
